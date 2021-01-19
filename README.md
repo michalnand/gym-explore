@@ -1,6 +1,8 @@
 # gym-explore
 RL hard exploration environments 
 
+### goal is to visit all rooms
+
 ![image](doc/explore_4_4.png)
 
 **random agent run**
@@ -12,26 +14,26 @@ RL hard exploration environments
 ![image](doc/explore_4_4_state.gif)
 
 
-goal is to explore all rooms
 
 agent sees only current room, can move in 4 directions
 
 environments can runs **thousands of FPS**, not depending on rooms count
 
-parameters
+env parameters
 - observation : RGB image, shape 3x96x96
 - actions     : 4 movement actions + 1 no move
 - reward      : +1 when all rooms visited, -1 when max_episode_steps
 
-episode steps (room is 12x12 fields)
-- max_episode_steps = size*size*room_size*4
-- room_size = 12
+max_episode_steps
+- room_size = 12 fields
+- max_episode_steps = size * size * room_size * 4
+
 
 
 
 # install
 
-**dependencec** python3, pip3, numpy, gym, PIL, cv2
+**dependences** python3, pip3, numpy, gym, PIL, cv2
 
 ```bash
 cd gym-explore
