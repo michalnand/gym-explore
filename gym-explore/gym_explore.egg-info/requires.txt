@@ -1,0 +1,4 @@
+gym
+numpy
+Pillow
+opencv-python
